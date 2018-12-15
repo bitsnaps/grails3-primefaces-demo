@@ -1,6 +1,6 @@
 # Summary
 
-Example project for [grails3-primefaces](https://github.com/promonic/grails3-primefaces) plugin.
+Example project for [grails3-primefaces-plugin](https://github.com/bitsnaps/grails3-primefaces) plugin.
 
 ## Dependencies
 
@@ -8,7 +8,7 @@ This plugin was written and tested with Grails 3.3.6 and Java 8u181 and Groovy 2
 
 ## Running the Example Interface
 
-Clone the [plugin project](https://github.com/prominic/grails3-primefaces).
+Clone the [plugin project](https://github.com/bitsnaps/grails3-primefaces).
 
 Install the plugin:
 
@@ -20,8 +20,9 @@ Run this application:
     cd grails3-primefaces-demo
     ./grailsw run-app    
     
-Once the application finishes loading, check the interface at:  [http://localhost:8080/faces/anagraphic/home.xhtml](http://localhost:8080/faces/anagraphic/home.xhtml)
-
+Once the application finishes loading, check the interface at:
+* [http://localhost:8080/faces/anagraphic/home.xhtml](http://localhost:8080/faces/anagraphic/home.xhtml)
+* [http://localhost:8080/faces/car/home.xhtml](http://localhost:8080/faces/car/home.xhtml)
 
 ## Building an Example From a New Domain Class (already done in this repo in com.company.demo.Car)
 
@@ -185,7 +186,7 @@ Open the new interface in a browser: [http://localhost:8080/faces/car/home.xhtml
 * [mibesoft](https://github.com/mibesoft/primefaces) - Original code 
 * [feather812002](https://github.com/feather812002) - Grails 3 Conversion
 * [JoelProminic](https://github.com/JoelProminic) - Cleanup and Documentation
-* [bitsnaps] (https://github.com/bitsnaps/grails3-primefaces-demo) - Upgrade to 3.3.6 and Cleanup
+* [bitsnaps](https://github.com/bitsnaps) - Upgrade to grails 3.3.6 and Cleanup
 
 ## License
 
