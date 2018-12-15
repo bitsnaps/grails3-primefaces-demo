@@ -68,9 +68,9 @@ dependencies {
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:2.47.1"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
-    runtime "org.postgresql:postgresql:42.2.2.jre7"
+    //runtime "org.postgresql:postgresql:42.2.2.jre7"
 
-    compile "org.grails.plugins:hibernate5:6.1.9"
+    compile "org.grails.plugins:hibernate5:6.1.10"
     compile "org.hibernate:hibernate-ehcache"
 
    // compile "org.joinfaces:joinfaces-parent:3.2.0"
@@ -80,7 +80,7 @@ dependencies {
    // compile "org.joinfaces:jsf-primefaces-spring-boot-starter:3.1.1"
 
 
-    compile("org.grails:gorm-hibernate5-spring-boot:6.1.9.RELEASE")
+    compile("org.grails:gorm-hibernate5-spring-boot:6.1.10.RELEASE")
     compile "org.hibernate:hibernate-core:5.1.0.Final"
     compile "org.hibernate:hibernate-ehcache:5.1.0.Final"
     runtime "com.h2database:h2:1.4.192"
@@ -88,7 +88,7 @@ dependencies {
     runtime "org.grails:grails-web-jsp:3.3.2.BUILD-SNAPSHOT"
 
 
-    compile "net.prominic.grails.plugins:grails3-primefaces:0.2"
+    compile "net.prominic.grails.plugins:grails3-primefaces-plugin:0.2"
 
 
 

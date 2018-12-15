@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+    <title>Car Demo</title>
+</h:head>
+<h:body>
+
+
+    <h:form id="carForm">
+
+        <p:dataTable var="car"
+                     value="#{carMB.cars}"
+                     selection="#{carMB.car}"
+                     rowKey="#{car.carID}"
+                     rows="10"
+                     paginator="true"
+                     rowsPerPageTemplate="10,20,50"
+                     lazy="true"
+                     selectionMode="single"
+                     currentPageReportTemplate="#{message.i18n('primefaces.datatable.currentPageReportTemplate.label', '{startRecord}', '{endRecord}', '{totalRecords}')}"
+                     paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                     >
+            <p:column headerText="Id">
+                <h:outputText value="#{car.carID}" />
+            </p:column>
+
+            <p:column headerText="Year">
+                <h:outputText value="#{car.year}" />
+            </p:column>
+
+            <p:column headerText="Brand">
+                <h:outputText value="#{car.brand}" />
+            </p:column>
+
+            <p:column headerText="Color">
+                <h:outputText value="#{car.color}" />
+            </p:column>
+        </p:dataTable>
+    </h:form>
+
+</h:body>
+
+</html>

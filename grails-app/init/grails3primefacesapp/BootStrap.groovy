@@ -1,5 +1,6 @@
 package grails3primefacesapp
-import com.company.demo.Anagraphic
+
+import com.company.demo.*
 
 class BootStrap {
 
@@ -27,6 +28,24 @@ class BootStrap {
         def t2 = System.currentTimeMillis()
         def delay = t2 - t1
         log.info "delay = ${delay} [mills]"
+
+        // initialize Car data
+        def colors = ['Black', 'White', 'Green', 'Red', 'Blue', 'Orange', 'Silver', 'Yellow', 'Brown', 'Maroon']
+        def brands = ['BMW', 'Mercedes', 'Volvo', 'Audi', 'Renault', 'Fiat', 'Volkswagen', 'Honda', 'Jaguar', 'Ford']
+        // enumerate all color and brand combinations
+        def combinations = [colors, brands].combinations()
+        combinations.each{ row ->
+            String color = row[0]
+            String brand = row[1]
+            // initialize a car entry
+            int newYear = (int) (Math.random() * 50 + 1960)
+            String newID = UUID.randomUUID().toString().substring(0, 8);
+            Car car = new Car (carID:newID, year:newYear, color:color, brand:brand)
+            car.save(flush:true, failOnError:true)
+        }
+
+        println "Total Cars:  " + Car.count()
+                
     }
     def destroy = {
     }

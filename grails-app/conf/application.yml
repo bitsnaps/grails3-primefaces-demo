@@ -95,7 +95,7 @@ dataSource:
     jmxExport: true
     driverClassName: org.h2.Driver
     username: sa
-    password:
+    password: ''
 
 environments:
     development:
@@ -118,5 +118,4 @@ grails:
     plugins:
         primefaces:
                 beans:
-                   packages: com.company.demo.beans
-
+                   packages: com.company.demo.beans # add other packages beans separated by commas
