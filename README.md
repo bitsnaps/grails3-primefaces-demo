@@ -1,10 +1,10 @@
 # Summary
 
-Example project for [grails3-primefaces](https://github.com/prominic/grails3-primefaces) plugin.
+Example project for [grails3-primefaces](https://github.com/promonic/grails3-primefaces) plugin.
 
 ## Dependencies
 
-This plugin was written and tested with Grails 3.3.3 and Java 8u131.
+This plugin was written and tested with Grails 3.3.6 and Java 8u181 and Groovy 2.5.1.
 
 ## Running the Example Interface
 
@@ -23,7 +23,7 @@ Run this application:
 Once the application finishes loading, check the interface at:  [http://localhost:8080/faces/anagraphic/home.xhtml](http://localhost:8080/faces/anagraphic/home.xhtml)
 
 
-## Building an Example From a New Domain Class
+## Building an Example From a New Domain Class (already done in this repo in com.company.demo.Car)
 
 ### Generate the new domain class
 
@@ -185,6 +185,7 @@ Open the new interface in a browser: [http://localhost:8080/faces/car/home.xhtml
 * [mibesoft](https://github.com/mibesoft/primefaces) - Original code 
 * [feather812002](https://github.com/feather812002) - Grails 3 Conversion
 * [JoelProminic](https://github.com/JoelProminic) - Cleanup and Documentation
+* [bitsnaps] (https://github.com/bitsnaps/grails3-primefaces-demo) - Upgrade to 3.3.6 and Cleanup
 
 ## License
 
